@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Mashreeq Digital Application Test Automation Test Suite" duration-ms="23464" started-at="2019-05-26T20:05:01Z" finished-at="2019-05-26T20:05:25Z">
+    <groups>
+    </groups>
+    <test name="Mashreeq Digital App Test Cases" duration-ms="23464" started-at="2019-05-26T20:05:01Z" finished-at="2019-05-26T20:05:25Z">
+      <class name="com.mashreeqdigital.qa.test.HomePageTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.mashreeqdigital.qa.test.HomePageTest@4c70fda8]" name="setUp" is-config="true" duration-ms="21201" started-at="2019-05-27T00:05:01Z" finished-at="2019-05-27T00:05:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="clickContactUsLink()[pri:0, instance:com.mashreeqdigital.qa.test.HomePageTest@4c70fda8]" name="clickContactUsLink" duration-ms="2247" started-at="2019-05-27T00:05:23Z" finished-at="2019-05-27T00:05:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickContactUsLink -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.mashreeqdigital.qa.test.HomePageTest@4c70fda8]" name="tearDown" is-config="true" duration-ms="0" started-at="2019-05-27T00:05:25Z" finished-at="2019-05-27T00:05:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.mashreeqdigital.qa.test.HomePageTest -->
+    </test> <!-- Mashreeq Digital App Test Cases -->
+  </suite> <!-- Mashreeq Digital Application Test Automation Test Suite -->
+</testng-results>
