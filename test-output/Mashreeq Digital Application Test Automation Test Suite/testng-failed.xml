@@ -1,17 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Mashreeq Digital Application Test Automation Test Suite]">
-  <listeners>
-    <listener class-name="com.mashreeqdigital.qa.extenreportlistner.ExtentReportListener"/>
-  </listeners>
   <test name="Mashreeq Digital App Test Cases(failed)">
     <classes>
       <class name="com.mashreeqdigital.qa.test.HomePageTest">
         <methods>
-          <include name="validateNavigationValues"/>
+          <include name="verifyNavigationBar"/>
           <include name="tearDown"/>
-          <include name="clickContactUsLink"/>
-          <include name="verifyNewsFeedLabel"/>
           <include name="setUp"/>
         </methods>
       </class> <!-- com.mashreeqdigital.qa.test.HomePageTest -->
