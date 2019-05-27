@@ -26,12 +26,13 @@ public class TestBase {
 	
 	public static WebDriver driver;
 	public static Properties prop;
+	public static String projectPath=System.getProperty("user.dir");
 	
 	public TestBase()
 	{
 		try {
 			prop=new Properties();
-			FileInputStream ip=new FileInputStream(System.getProperty("user.dir")+"/config.properties");
+			FileInputStream ip=new FileInputStream(projectPath+"/config.properties");
 			
 			prop.load(ip);
 			
