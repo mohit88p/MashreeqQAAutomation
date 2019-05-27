@@ -38,7 +38,7 @@ public class TestBase {
 			
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
-			// TODO: handle exception
+			
 		} catch(Exception e)
 		{
 			e.printStackTrace();
@@ -53,18 +53,17 @@ public class TestBase {
 		
 		if(browserName.equals("chrome"))
 		{
-			System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"/chromedriver");
+			System.setProperty("webdriver.chrome.driver", projectPath+"/chromedriver");
 			driver=new ChromeDriver();
 		}else if(browserName.equals("firefox"))
 		{
-			System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir")+"/geckodriver");
+			System.setProperty("webdriver.gecko.driver", projectPath+"/geckodriver");
 			driver=new FirefoxDriver();
 		}else if(browserName.equals("safari"))
 		{
 			driver=new SafariDriver();
 		}else if(browserName.equals("opera"))
 		{
-			
 			driver=new OperaDriver();
 		}
 		driver.manage().window().maximize();
