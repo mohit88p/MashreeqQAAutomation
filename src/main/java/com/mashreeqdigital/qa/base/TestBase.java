@@ -16,6 +16,7 @@ import org.openqa.selenium.safari.SafariDriver;
 
 import com.mashreeqdigital.qa.util.TestUtil;
 
+
 /**
  * @author mohitpuri
  *
@@ -25,7 +26,6 @@ public class TestBase {
 	
 	public static WebDriver driver;
 	public static Properties prop;
-	
 	
 	public TestBase()
 	{
@@ -44,7 +44,6 @@ public class TestBase {
 		}
 		
 	}
-	
 	
 	public static void initialization()
 	{

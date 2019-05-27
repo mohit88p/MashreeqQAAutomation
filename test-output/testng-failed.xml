@@ -8,8 +8,10 @@
     <classes>
       <class name="com.mashreeqdigital.qa.test.HomePageTest">
         <methods>
+          <include name="validateNavigationValues"/>
           <include name="tearDown"/>
           <include name="clickContactUsLink"/>
+          <include name="verifyNewsFeedLabel"/>
           <include name="setUp"/>
         </methods>
       </class> <!-- com.mashreeqdigital.qa.test.HomePageTest -->
