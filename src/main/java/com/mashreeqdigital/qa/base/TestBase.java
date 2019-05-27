@@ -5,6 +5,7 @@ package com.mashreeqdigital.qa.base;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
+import java.util.Date;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
@@ -18,7 +19,8 @@ import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 import com.mashreeqdigital.qa.util.TestUtil;
-
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 
 /**
  * @author mohitpuri
@@ -33,6 +35,12 @@ public class TestBase {
 	public static ExtentHtmlReporter htmlReporter;
 	public static ExtentReports extent;
 	public static ExtentTest testEvent;
+	public static Logger log= LogManager.getLogger();
+	
+	
+	
+	
+
 	
 	public TestBase()
 	{
@@ -49,6 +57,7 @@ public class TestBase {
 		{
 			e.printStackTrace();
 		}
+		
 		
 	}
 	
@@ -77,7 +86,9 @@ public class TestBase {
 		driver.manage().timeouts().pageLoadTimeout(TestUtil.PAGE_LOAD_TIMEOUT, TimeUnit.SECONDS);
 		driver.manage().timeouts().implicitlyWait(TestUtil.IMPLICIT_WAIT, TimeUnit.SECONDS);
 		
+		log.info("Enter the URL");
 		driver.get(prop.getProperty("url"));
+		
 	}
 
 }

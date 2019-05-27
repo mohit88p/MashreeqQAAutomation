@@ -1,13 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite
-	name="Mashreeq Digital Application Test Automation Test Suite">
-
-	<test name="Mashreeq Digital App Test Cases">
+<suite name="Mashreeq Digital Application Test Automation Test Suite" parallel="methods">
+	<test name="Mashreeq Digital App Test Case">
 		<classes>
-			<class name="com.mashreeqdigital.qa.test.HomePageTest"></class>
-
-
+			<class name="com.mashreeqdigital.qa.test.HomePageTest"/>
 		</classes>
-	</test>
-</suite>
+	</test>	
+</suite>					
