@@ -3,11 +3,6 @@
 <suite
 	name="Mashreeq Digital Application Test Automation Test Suite">
 
-	<listeners>
-		<listener
-			class-name="com.mashreeqdigital.qa.extenreportlistner.ExtentReportListener" />
-	</listeners>
-	
 	<test name="Mashreeq Digital App Test Cases">
 		<classes>
 			<class name="com.mashreeqdigital.qa.test.HomePageTest"></class>

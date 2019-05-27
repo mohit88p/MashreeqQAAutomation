@@ -11,6 +11,8 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
+import com.aventstack.extentreports.ExtentReports;
+import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 import com.mashreeqdigital.qa.base.TestBase;
 import com.mashreeqdigital.qa.pages.ContactUsPage;
 import com.mashreeqdigital.qa.pages.HomePage;
@@ -32,6 +34,9 @@ public class HomePageTest extends TestBase {
 	@BeforeMethod
 	public void setUp() {
 		initialization();
+		htmlReporter=new ExtentHtmlReporter("extent.html");
+		extent=new ExtentReports();
+		extent.attachReporter(htmlReporter);
 	}
 
 	//Test Case 1 - The navigation bar should be visible on desktop devices
@@ -39,6 +44,7 @@ public class HomePageTest extends TestBase {
 	public void verifyNavigationBar()
 	
 	{ 
+		extent.createTest("Test To verify the Navigation Links in the Page");
 		homePage=new HomePage();
 		boolean navigDis=homePage.NavigationBarDisplayed();
 		Assert.assertTrue(navigDis, navigDis ? "Value is match" : "Value does not match");
@@ -83,5 +89,6 @@ public class HomePageTest extends TestBase {
 	@AfterMethod
 	public void tearDown() {
 		driver.quit();
+		extent.flush();
 	}
 }

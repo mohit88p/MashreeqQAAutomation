@@ -14,6 +14,9 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.opera.OperaDriver;
 import org.openqa.selenium.safari.SafariDriver;
 
+import com.aventstack.extentreports.ExtentReports;
+import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 import com.mashreeqdigital.qa.util.TestUtil;
 
 
@@ -27,6 +30,9 @@ public class TestBase {
 	public static WebDriver driver;
 	public static Properties prop;
 	public static String projectPath=System.getProperty("user.dir");
+	public static ExtentHtmlReporter htmlReporter;
+	public static ExtentReports extent;
+	public static ExtentTest testEvent;
 	
 	public TestBase()
 	{
