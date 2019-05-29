@@ -147,3 +147,16 @@
 [INFO ] 2019-05-27 15:10:47.200 [TestNG-test=Mashreeq Digital App Test Case-4] TestBase - Sub Product Field is initially Empy in the page
 [INFO ] 2019-05-27 15:10:47.317 [TestNG-test=Mashreeq Digital App Test Case-4] TestBase - Select the Loans in dropdown and simultaneously cvalue populate in sub product
 [INFO ] 2019-05-27 15:10:47.791 [TestNG-test=Mashreeq Digital App Test Case-4] TestBase - Succesfull verify the value for mobile number
+[INFO ] 2019-05-29 13:49:26.497 [TestNG-test=Mashreeq Digital App Test Case-1] TestBase - Enter the URL
+[INFO ] 2019-05-29 13:49:38.153 [TestNG-test=Mashreeq Digital App Test Case-1] TestBase - Navigation bar is present
+[INFO ] 2019-05-29 13:49:39.448 [TestNG-test=Mashreeq Digital App Test Case-2] TestBase - Enter the URL
+[INFO ] 2019-05-29 13:49:57.658 [TestNG-test=Mashreeq Digital App Test Case-2] TestBase - Navigation Value is present on the Page
+[INFO ] 2019-05-29 13:49:58.633 [TestNG-test=Mashreeq Digital App Test Case-3] TestBase - Enter the URL
+[INFO ] 2019-05-29 13:50:09.981 [TestNG-test=Mashreeq Digital App Test Case-3] TestBase - News Feed is present on the page
+[INFO ] 2019-05-29 13:50:11.033 [TestNG-test=Mashreeq Digital App Test Case-4] TestBase - Enter the URL
+[INFO ] 2019-05-29 13:50:29.196 [TestNG-test=Mashreeq Digital App Test Case-4] TestBase - Succesfull click on contact us Link on the page
+[INFO ] 2019-05-29 13:50:29.520 [TestNG-test=Mashreeq Digital App Test Case-4] TestBase - Succesfull click on Submit Vutton on Contact us page
+[INFO ] 2019-05-29 13:50:30.013 [TestNG-test=Mashreeq Digital App Test Case-4] TestBase - Succesfully able to see all 4 values in the dropdown
+[INFO ] 2019-05-29 13:50:30.013 [TestNG-test=Mashreeq Digital App Test Case-4] TestBase - Sub Product Field is initially Empy in the page
+[INFO ] 2019-05-29 13:50:30.122 [TestNG-test=Mashreeq Digital App Test Case-4] TestBase - Select the Loans in dropdown and simultaneously cvalue populate in sub product
+[INFO ] 2019-05-29 13:50:30.627 [TestNG-test=Mashreeq Digital App Test Case-4] TestBase - Succesfull verify the value for mobile number

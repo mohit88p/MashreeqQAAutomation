@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
-  <test name="Default test(failed)">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Mashreeq Digital Application Test Automation Test Suite]" parallel="methods">
+  <test name="Mashreeq Digital App Test Case(failed)" parallel="methods">
     <classes>
       <class name="com.mashreeqdigital.qa.test.HomePageTest">
         <methods>
@@ -11,5 +11,5 @@
         </methods>
       </class> <!-- com.mashreeqdigital.qa.test.HomePageTest -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- Mashreeq Digital App Test Case(failed) -->
+</suite> <!-- Failed suite [Mashreeq Digital Application Test Automation Test Suite] -->

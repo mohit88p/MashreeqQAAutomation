@@ -37,11 +37,6 @@ public class TestBase {
 	public static ExtentTest testEvent;
 	public static Logger log= LogManager.getLogger();
 	
-	
-	
-	
-
-	
 	public TestBase()
 	{
 		try {

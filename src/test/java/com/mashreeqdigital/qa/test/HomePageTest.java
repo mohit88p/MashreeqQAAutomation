@@ -19,6 +19,7 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
+import org.testng.asserts.SoftAssert;
 
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.Status;
@@ -39,7 +40,7 @@ public class HomePageTest extends TestBase {
 	ContactUsPage contactUs;
 	
 	
-	
+	SoftAssert sAssert=new SoftAssert();
 	public HomePageTest() throws IOException {
 		super();
 	}
@@ -57,17 +58,16 @@ public class HomePageTest extends TestBase {
 	public void verifyNavigationBar()
 	
 	{ 
-		
 		extent.attachReporter(htmlReporter);
 		testEvent = extent.createTest("Navigate Bar Verification", "This test is to check the Navigation Bar on the page");
 		testEvent.log(Status.INFO, "This TEST has been started(status, details)");
 		
 		homePage=new HomePage();
 		boolean navigDis=homePage.NavigationBarDisplayed();
-		Assert.assertTrue(navigDis, navigDis ? "Value is match" : "Value does not match");
-		
+		sAssert.assertTrue(navigDis, navigDis ? "Value is match" : "Value does not match");
 		log.info("Navigation bar is present");
 		testEvent.pass("Navigation Bar is present on the page");
+		sAssert.assertAll();
 
 	}
 	//Test Case 2- The navigation bar should be visible on desktop devices and display 9 items
@@ -81,9 +81,10 @@ public class HomePageTest extends TestBase {
 		
 		homePage=new HomePage();
 		boolean display = homePage.displayValue();
-		Assert.assertTrue(display, display ? "Value is match" : "Value does not match");		
+		sAssert.assertTrue(display, display ? "Value is match" : "Value does not match");
 		log.info("Navigation Value is present on the Page");
 		testEvent.pass("All the 9 Navigation Links are present on the page");
+		sAssert.assertAll();
 	}
 	
 	//Test Case 3 -The Mashreq News should be displayed on the homepage
@@ -97,10 +98,10 @@ public class HomePageTest extends TestBase {
 		
 		homePage=new HomePage();
 		boolean newsFeed=homePage.verifyNewsFeed();
-		Assert.assertTrue(newsFeed, newsFeed ? "Value is match" : "Value does not match");	
-		
+		sAssert.assertTrue(newsFeed, newsFeed ? "Value is match" : "Value does not match");
 		log.info("News Feed is present on the page");
 		testEvent.pass("Mashreeq News Feed is Present on the page");
+		sAssert.assertAll();
 
 	}
 	
@@ -116,27 +117,32 @@ public class HomePageTest extends TestBase {
 		homePage = new HomePage();
 		contactUs = new ContactUsPage();
 		homePage.clickContactUs();
-		
+		sAssert.assertEquals(true, false,"Succesfully Clicked on Contact U Linbk in the page");
 		log.info("Succesfull click on contact us Link on the page");
 		testEvent.pass("Click on Contact Us Link on the Page");
 		
 		contactUs.clickOnSubmit();
+		sAssert.assertEquals(true, false,"Succesfully Clicked on Submit Button");
 		log.info("Succesfull click on Submit Vutton on Contact us page");
 		testEvent.pass("Click on Submit Button in Contact UsPage");
 		
 		contactUs.displayValue();
+		sAssert.assertEquals(true, false,"Value propertly Displayed");
 		log.info("Succesfully able to see all 4 values in the dropdown");
 		testEvent.pass("I am looking to field is a dropdown with 4 choices");
 		
 		log.info("Sub Product Field is initially Empy in the page");
 		testEvent.pass("Select Sub Product field is initially empty");
 		contactUs.verifySubProduct();
+		sAssert.assertEquals(true, false,"Loans in dropdown and simultaneously cvalue populate in sub product");
 		log.info("Select the Loans in dropdown and simultaneously cvalue populate in sub product");
 		testEvent.pass("Selecting the Product “Loans” from the dropdown and it populates the Select Sub Product sdropdown with 6 options");
 		
 		contactUs.verifyMobileNumer();
+		sAssert.assertEquals(true, false,"Mobile Number is verified");
 		log.info("Succesfull verify the value for mobile number");
 		testEvent.pass("Succesfully Verify the value for mobile number field");
+		sAssert.assertAll();
 
 	}
 

@@ -92,10 +92,7 @@ public class ContactUsPage extends com.mashreeqdigital.qa.base.TestBase {
 	
 	public void verifySelectedPRoduct()
 	{
-		
-		
-           
-             Select archiveList = new Select(driver.findElement(By.id("need")));
+			 Select archiveList = new Select(driver.findElement(By.id("need")));
              String selectedValue = archiveList.getFirstSelectedOption().getText();
              if(selectedValue=="-- Select Product--")
              {
